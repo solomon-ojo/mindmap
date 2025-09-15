@@ -1,7 +1,14 @@
+import Container from "@/components/Container";
 import React from "react";
 
 const Home = () => {
-  return <div className=" text-green-500">Home</div>;
+  return (
+    <main className="bg-gray-100 w-full min-h-screen">
+      <Container>
+        <h1>Hello</h1>
+      </Container>
+    </main>
+  );
 };
 
 export default Home;
