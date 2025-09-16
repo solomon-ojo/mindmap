@@ -11,12 +11,12 @@ const Navbar = () => {
     setIsOpen((prev) => !prev);
   };
   return (
-    <header className=" fixed lg:relative w-full h-full bg-gray-100 pt-8 xl:pt-14 py-[30px] px-5 xl:px-10">
+    <header className=" fixed lg:relative w-full bg-gray-100 pt-8 xl:pt-14 py-[30px] ">
       <Container>
         {/* desktop */}
         <div className="w-full h-[106px]  bg-white hidden lg:flex items-center justify-between px-10 rounded-full">
           <div className="w-[35%] ">
-            <span className="w-[122px] h-[27px]  text-3xl text-primary-100 font-extrabold">
+            <span className="w-[122px] h-[27px]  text-3xl text-primary-100 font-extrabold cursor-pointer">
               mindmap
             </span>
           </div>
@@ -24,7 +24,10 @@ const Navbar = () => {
             <div className="flex flex-[2] items-center">
               <ul className="flex items-center justify-between gap-5">
                 {desktopNavLinks.map((link) => (
-                  <li key={link.path} className="px-4 text-black text-xl cursor-pointer">
+                  <li
+                    key={link.path}
+                    className="px-4 text-black text-xl cursor-pointer"
+                  >
                     {link.name}
                   </li>
                 ))}
@@ -61,7 +64,7 @@ const Navbar = () => {
         {/* mobile */}
         <div className="w-full flex lg:hidden ">
           <div className="w-full flex justify-between items-center h-[56px] rounded-full bg-white px-5 py-3 ">
-            <div className="flex-1 text-2xl font-extrabold text-primary-100">
+            <div className="flex-1 text-2xl font-extrabold text-primary-100 cursor-pointer">
               mindmap
             </div>
             <div
@@ -70,25 +73,25 @@ const Navbar = () => {
             >
               {isOpen ? (
                 <Image
-                  src={"/icons/open.png"}
-                  width={32}
-                  height={32}
-                  alt="open_icon"
-                />
-              ) : (
-                <Image
                   src={"/icons/close.png"}
                   width={20}
                   height={20}
                   alt="close_icon"
+                />
+              ) : (
+                <Image
+                  src={"/icons/open.png"}
+                  width={32}
+                  height={32}
+                  alt="open_icon"
                 />
               )}
             </div>
           </div>
           <nav
             className={` ${
-              isOpen ? "hidden" : "block"
-            } absolute left-0 top-[82px] right-0 h-screen flex flex-col space-y-10  px-8`}
+              isOpen ? "left-0 right-0" : "left-[-100%]"
+            } absolute  top-[90px]  h-screen flex flex-col space-y-10  px-8 bg-gray-100 z-30`}
           >
             <ul className="flex  flex-col space-y-8 mt-10 py-4">
               {mobileNavLinks.map((link) => (
