@@ -1,15 +1,14 @@
 "use client";
-import React, { useState } from "react";
+import React from "react";
 import Container from "./Container";
 import { desktopNavLinks, mobileNavLinks } from "@/utils/navlinks";
 import Link from "next/link";
 import Image from "next/image";
+import { useUiStore } from "@/zustand/uiStore";
 
 const Navbar = () => {
-  const [isOpen, setIsOpen] = useState(false);
-  const handleToggleIcon = () => {
-    setIsOpen((prev) => !prev);
-  };
+  const { isMobileNavOpen, toggleMobileNav } = useUiStore();
+  // };
   return (
     <header className=" fixed lg:relative w-full bg-gray-100 pt-8 xl:pt-14 py-[30px] ">
       <Container>
@@ -68,10 +67,10 @@ const Navbar = () => {
               mindmap
             </div>
             <div
-              onClick={handleToggleIcon}
+              onClick={toggleMobileNav}
               className="flex-1 flex justify-end cursor-pointer "
             >
-              {isOpen ? (
+              {isMobileNavOpen ? (
                 <Image
                   src={"/icons/close.png"}
                   width={20}
@@ -90,8 +89,8 @@ const Navbar = () => {
           </div>
           <nav
             className={` ${
-              isOpen ? "left-0 right-0" : "left-[-100%]"
-            } absolute  top-[90px]  h-screen flex flex-col space-y-10  px-8 bg-gray-100 z-30`}
+              isMobileNavOpen ? "left-0 right-0" : "left-[-100%]"
+            } absolute  top-[90px]  h-screen flex flex-col space-y-10  px-8 bg-gray-100 z-50`}
           >
             <ul className="flex  flex-col space-y-8 mt-10 py-4">
               {mobileNavLinks.map((link) => (

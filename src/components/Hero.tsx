@@ -1,10 +1,14 @@
+"use client";
 import React from "react";
 import Container from "./Container";
 import Image from "next/image";
 import ContactButton from "./ContactButton";
 import WaitlistButton from "./WaitlistButton";
+import { useUiStore } from "@/zustand/uiStore";
 
 const Hero = () => {
+  const { isMobileNavOpen } = useUiStore();
+
   return (
     <section className="w-full h-full">
       <Container>
@@ -51,7 +55,11 @@ const Hero = () => {
           </div>
         </div>
         {/* mobile */}
-        <div className="lg:hidden w-full h-[402px] bg-primary-200/100 p-5 text-white rounded-4xl  relative">
+        <div
+          className={` ${
+            isMobileNavOpen ? "hidden" : "block"
+          } lg:hidden w-full h-[402px] bg-primary-200/100 p-5 text-white rounded-4xl z-0   relative `}
+        >
           <div className="w-[122px] h-[122px] absolute right-0 top-[-30px]">
             <Image
               src={"/icons/hero_img4.png"}
@@ -60,7 +68,7 @@ const Hero = () => {
               alt="hero_image"
             />
           </div>
-           <div className="w-[140px] h-[240px] absolute overflow-hidden right-0 bottom-0 rounded-4xl ">
+          <div className="w-[140px] h-[240px] absolute overflow-hidden right-0 bottom-0 rounded-4xl ">
             <Image
               src={"/icons/hero_img3.png"}
               width={140}
