@@ -58,7 +58,7 @@ const Hero = () => {
         <div
           className={` ${
             isMobileNavOpen ? "hidden" : "block"
-          } lg:hidden w-full h-[402px] bg-primary-200/100 p-5 text-white rounded-4xl z-0   relative `}
+          } lg:hidden w-full h-[450px] xs:h-[400px] bg-primary-200/100 p-5 text-white rounded-4xl z-0   relative `}
         >
           <div className="w-[122px] h-[122px] absolute right-0 top-[-30px]">
             <Image
