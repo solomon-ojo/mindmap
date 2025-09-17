@@ -8,7 +8,7 @@ import { useUiStore } from "@/zustand/uiStore";
 
 const Navbar = () => {
   const { isMobileNavOpen, toggleMobileNav } = useUiStore();
-  // };
+
   return (
     <header className=" fixed  w-full bg-gray-100 pt-8 xl:pt-14 py-[30px] z-50 ">
       <Container>
