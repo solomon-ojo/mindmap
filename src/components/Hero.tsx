@@ -10,7 +10,7 @@ const Hero = () => {
   const { isMobileNavOpen } = useUiStore();
 
   return (
-    <section className="w-full h-full">
+    <section className="w-full h-full mt-4 lg:mt-[250px]">
       <Container>
         {/* desktop */}
         <div className="w-full h-full hidden lg:block">

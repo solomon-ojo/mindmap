@@ -3,7 +3,7 @@ import React from "react";
 const FeatureCards = () => {
   return (
     <div className="w-full h-full flex flex-col lg:flex-row justify-center">
-      <div className="flex-1 bg-[#F5F4F6] h-full rounded-4xl">
+      <div className="flex-1 bg-gray-100 h-full rounded-4xl">
         <div className="m-5 h-full ">
           <div className="w-full lg:w-[310px] h-[241px] bg-white rounded-lg"></div>
           <div className="flex-1  pt-10">

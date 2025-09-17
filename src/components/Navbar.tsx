@@ -10,7 +10,7 @@ const Navbar = () => {
   const { isMobileNavOpen, toggleMobileNav } = useUiStore();
   // };
   return (
-    <header className=" fixed lg:relative w-full bg-gray-100 pt-8 xl:pt-14 py-[30px] ">
+    <header className=" fixed  w-full bg-gray-100 pt-8 xl:pt-14 py-[30px] z-50 ">
       <Container>
         {/* desktop */}
         <div className="w-full h-[106px]  bg-white hidden lg:flex items-center justify-between px-10 rounded-full">
@@ -61,7 +61,7 @@ const Navbar = () => {
           </div>
         </div>
         {/* mobile */}
-        <div className="w-full flex lg:hidden ">
+        <div className="w-full flex lg:hidden   ">
           <div className="w-full flex justify-between items-center h-[56px] rounded-full bg-white px-5 py-3 ">
             <div className="flex-1 text-2xl font-extrabold text-primary-100 cursor-pointer">
               mindmap
