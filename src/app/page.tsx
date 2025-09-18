@@ -1,3 +1,4 @@
+import CommunityBanner from "@/components/CommunityBanner";
 import Hero from "@/components/Hero";
 import OurFeatures from "@/components/OurFeatures";
 import WhatWeHaveBuilt from "@/components/WhatWeHaveBuilt";
@@ -9,6 +10,7 @@ const Home = () => {
       <Hero />
       <WhatWeHaveBuilt />
       <OurFeatures />
+      <CommunityBanner />
     </main>
   );
 };
