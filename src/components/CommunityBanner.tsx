@@ -19,7 +19,7 @@ const CommunityBanner = () => {
                   className="bg-inherit"
                 />
               </div>
-              <div className="">
+              <div className="mt-0 lg:mt-4">
                 <h2 className="text-white font-medium text-[12px] lg:text-sm uppercase">
                   Community
                 </h2>
@@ -37,8 +37,8 @@ const CommunityBanner = () => {
                 </div>
                 <div className="w-full lg:w-auto">
                   <Button
-                    title="GET THE APP"
-                    className="bg-white w-full text-primary-100 text-xl font-semibold rounded-full px-[39px] py-[15px] mt-10"
+                    title="Get The App"
+                    className="bg-white w-full lg:w-auto text-primary-100 text-xl font-semibold rounded-full px-[39px] py-[15px] mt-10"
                   />
                 </div>
               </div>
