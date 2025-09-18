@@ -7,7 +7,7 @@ const CommunityBanner = () => {
   return (
     <section className="w-full h-full mt-30">
       <Container>
-        <div className="w-full h-[604px] lg:h-[587px] bg-primary-100 rounded-4xl flex items-center justify-center">
+        <div className="w-full h-[604px] lg:h-[587px] bg-primary-100 rounded-4xl lg:rounded-[50px] flex items-center justify-center">
           <div className="w-[90%] h-[85%] flex items-center ">
             {/* left */}
             <div className="flex-1 h-full lg:mt-10  ">

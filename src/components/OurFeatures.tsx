@@ -7,7 +7,7 @@ const OurFeatures = () => {
   return (
     <section className="w-full h-full">
       <Container>
-        <div className="w-full h-full lg:h-[995px] flex items-center justify-center rounded-4xl bg-white">
+        <div className="w-full h-full lg:h-[995px] flex items-center justify-center rounded-4xl lg:rounded-[50px] bg-white">
           <div className="w-[90%] h-full lg:h-[90%] flex flex-col  ">
             <div className="">
               <div className="mt-5 lg:mt-4">

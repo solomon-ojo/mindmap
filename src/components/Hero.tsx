@@ -14,7 +14,7 @@ const Hero = () => {
       <Container>
         {/* desktop */}
         <div className="w-full h-full hidden lg:block">
-          <div className=" w-full h-[668px]  bg-primary-200 rounded-4xl flex flex-col items-center justify-center overflow-hidden relative">
+          <div className=" w-full h-[668px]  bg-primary-200 rounded-4xl lg:rounded-[50px] flex flex-col items-center justify-center overflow-hidden relative">
             <div className=" w-[731px] h-[266px]   ">
               <h1 className="text-5xl font-bold text-white flex flex-col items-center">
                 <span className=" ">Information, Access, Connection</span>
