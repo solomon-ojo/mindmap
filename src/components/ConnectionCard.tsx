@@ -25,10 +25,14 @@ const ConnectionCard = () => {
           <span className="text-[12px] lg:text-xl font-semibold px-4 py-2 lg:px-[39px] lg:py-[15px]   bg-[#53A06E] text-white rounded-4xl">
             Events
           </span>
-          <span className="h-[30px] w-[30px] lg:h-[54px] lg:w-[54px] flex items-center justify-center  gap-1 bg-[#53A06E]  rounded-full">
+          <span className=" h-[30px] w-[30px] lg:h-[54px] lg:w-[54px] flex items-center justify-center  lg:hidden gap-1 bg-[#53A06E]  rounded-full">
             <span className={spanStyle}></span>
             <span className={spanStyle}></span>
             <span className={spanStyle}></span>
+          </span>
+
+          <span className=" hidden lg:block text-[12px] lg:text-xl font-semibold px-4 py-2 lg:px-[39px] lg:py-[15px]   bg-[#53A06E] text-white rounded-4xl">
+            Public Journaling
           </span>
         </div>
       </div>
