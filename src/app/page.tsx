@@ -1,4 +1,5 @@
 import CommunityBanner from "@/components/CommunityBanner";
+import FrequentQuestions from "@/components/FrequentQuestions";
 import Hero from "@/components/Hero";
 import OurFeatures from "@/components/OurFeatures";
 import OurMethodology from "@/components/OurMethodology";
@@ -13,6 +14,7 @@ const Home = () => {
       <OurFeatures />
       <CommunityBanner />
       <OurMethodology />
+      <FrequentQuestions/>
     </main>
   );
 };
