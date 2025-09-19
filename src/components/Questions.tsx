@@ -10,7 +10,7 @@ const Questions = ({ text }: QuestionProp) => {
       <div className="w-full h-full flex justify-between px-5 lg:px-10 items-center">
         <div className="text-[12px] font-medium lg:text-xl text-primary-100">{text}</div>
         <div className="">
-          <span className="w-[25px] h-[25px] md:w-[42px] md:h-[42px]">
+          <span className="w-[25px] h-[25px] lg:w-[42px] lg:h-[42px]">
             <Image
               src="/icons/plus_icon.svg"
               width={42}

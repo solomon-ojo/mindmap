@@ -7,7 +7,7 @@ const FrequentQuestions = () => {
   return (
     <section>
       <Container>
-        <div className="w-full h-[873px] flex flex-col lg:flex-row">
+        <div className="w-full h-full lg:h-[873px] flex flex-col lg:flex-row">
           {/* left */}
           <div className=" flex flex-col w-full lg:w-[499px] text-primary-100">
             <div className=" flex-1 w-full  ">

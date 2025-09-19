@@ -3,6 +3,7 @@ import FrequentQuestions from "@/components/FrequentQuestions";
 import Hero from "@/components/Hero";
 import OurFeatures from "@/components/OurFeatures";
 import OurMethodology from "@/components/OurMethodology";
+import Testimonials from "@/components/Testimonials";
 import WhatWeHaveBuilt from "@/components/WhatWeHaveBuilt";
 import React from "react";
 
@@ -14,7 +15,8 @@ const Home = () => {
       <OurFeatures />
       <CommunityBanner />
       <OurMethodology />
-      <FrequentQuestions/>
+      <FrequentQuestions />
+      <Testimonials />
     </main>
   );
 };
