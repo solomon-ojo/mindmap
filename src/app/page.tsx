@@ -1,6 +1,7 @@
 import CommunityBanner from "@/components/CommunityBanner";
 import Hero from "@/components/Hero";
 import OurFeatures from "@/components/OurFeatures";
+import OurMethodology from "@/components/OurMethodology";
 import WhatWeHaveBuilt from "@/components/WhatWeHaveBuilt";
 import React from "react";
 
@@ -11,6 +12,7 @@ const Home = () => {
       <WhatWeHaveBuilt />
       <OurFeatures />
       <CommunityBanner />
+      <OurMethodology />
     </main>
   );
 };
