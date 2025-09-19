@@ -11,7 +11,7 @@ const ConnectionCard = () => {
           <h1 className="text-xl font-bold lg:text-[40px] lg:font-semibold py-2">
             Connection
           </h1>
-          <p className="text-[12px] lg:text-xl py-3 max-w-[90%] md:max-w-[80%] lg:max-w-[718px]">
+          <p className="text-[12px] lg:text-xl py-3 max-w-[80%] sm:max-w-[70%] md:max-w-[75%] lg:max-w-[718px]">
             We foster a vibrant community through engaging events, collaborative
             journaling, and shared experiences. Our aim is to create meaningful
             connections that empower individuals to express themselves and learn
