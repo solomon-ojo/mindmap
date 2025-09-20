@@ -14,10 +14,10 @@ const FrequentQuestions = () => {
               <h3 className="uppercase text-[12px] lg:text-sm font-medium pb-5 ">
                 Need support
               </h3>
-              <h1 className=" text-xl lg:text-[52px] w-[70%] lg:w-full font-semibold lg:font-bold pb-5">
+              <h1 className=" text-xl lg:text-[52px] w-[70%] lg:w-full font-semibold leading-tight lg:font-bold pb-5">
                 Frequently Asked Questions
               </h1>
-              <p className="text-[12px] lg:text-[22px] pb-5 lg:pr-10">
+              <p className="text-[12px] lg:text-[22px] pb-5 lg:pr-10 leading-tight">
                 Get clear answers to frequently asked questions regarding our
                 services and mental health support.
               </p>

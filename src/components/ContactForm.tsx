@@ -24,30 +24,38 @@ const ContactForm = () => {
               Garden EC1N 8LE
             </p>
             <div className="flex items-center gap-4 py-3 lg:py-5">
-              <Image
-                src={"/icons/instagram2.png"}
-                height={24}
-                width={24}
-                alt="instagram"
-              />
-              <Image
-                src={"/icons/facebook2.png"}
-                height={24}
-                width={24}
-                alt="facebook"
-              />
-              <Image
-                src={"/icons/linkedin2.png"}
-                height={24}
-                width={24}
-                alt="linkedin"
-              />
-              <Image
-                src={"/icons/whatsap.png"}
-                height={24}
-                width={24}
-                alt="whatsapp"
-              />
+              <a href="#" className="">
+                <Image
+                  src={"/icons/instagram2.png"}
+                  height={24}
+                  width={24}
+                  alt="instagram"
+                />
+              </a>
+              <a href="#" className="">
+                <Image
+                  src={"/icons/facebook2.png"}
+                  height={24}
+                  width={24}
+                  alt="facebook"
+                />
+              </a>
+              <a href="#" className="">
+                <Image
+                  src={"/icons/linkedin2.png"}
+                  height={24}
+                  width={24}
+                  alt="linkedin"
+                />
+              </a>
+              <a href="#" className="">
+                <Image
+                  src={"/icons/whatsap.png"}
+                  height={24}
+                  width={24}
+                  alt="whatsapp"
+                />
+              </a>
             </div>
             <p className=" text-[12px]  lg:text-[20px] pt-6 lg:pt-20">
               We aim to reply within 24 hours.

@@ -9,7 +9,7 @@ const FeatureCards = () => {
         <div className="m-5 h-full ">
           <div className="w-full lg:w-[310px] h-[241px] bg-white rounded-lg"></div>
           <div className="flex-1  pt-10">
-            <h2 className="font-semibold  text-xl lg:text-[30px]">
+            <h2 className="font-semibold  text-xl lg:text-[30px] leading-tight">
               MindSense: AI Copilot & Proactive Care System
             </h2>
             <p className=" text-sm lg:text-[18px] pt-6">
@@ -25,7 +25,7 @@ const FeatureCards = () => {
       {/* second card */}
       <div className="flex-1 flex flex-col gap-6  h-full   ">
         <div className="bg-[#E6DEF6] flex-1 rounded-2xl p-3 relative">
-          <h1 className="font-semibold text-[30px] mt-10 pt-3">
+          <h1 className="font-semibold text-[30px] mt-10 pt-3 leading-tight">
             Information Hub (Learn)
           </h1>
           <p className=" text-sm lg:text-[18px] mt-8">
@@ -47,7 +47,7 @@ const FeatureCards = () => {
               <Image fill src="/icons/spiral_icon.png" alt="spiral_icon" />
             </div>
           </div>
-          <h1 className="font-semibold text-[30px] mt-6 pt-3">
+          <h1 className="font-semibold text-[30px] mt-6 pt-3 leading-tight">
             MindAi: Universal Chat Assistant
           </h1>
           <p className=" text-sm lg:text-[18px] mt-5">
@@ -64,7 +64,7 @@ const FeatureCards = () => {
       {/* third card */}
       <div className="flex-1 flex flex-col gap-6  h-full relative  ">
         <div className="bg-[#FBF7D4] h-[310px] lg:h-[414px] rounded-2xl p-3">
-          <h1 className="font-semibold text-[30px] text-[#726915] mt-10 pt-3">
+          <h1 className="font-semibold text-[30px] text-[#726915] mt-10 pt-3 leading-tight">
             Community and Events
           </h1>
           <p className=" text-sm lg:text-[18px] mt-8 ">
@@ -82,7 +82,7 @@ const FeatureCards = () => {
         </div>
         <div className=" flex-1 pb-8 lg:pb-0">
           <div className="bg-gray-100 text-[#53A06E]  h-full relative rounded-2xl p-3">
-            <h1 className="font-semibold text-[30px]  mt-10 pt-3">
+            <h1 className="font-semibold text-[30px]  mt-10 pt-3 leading-tight">
               Book a Therapist
             </h1>
             <p className=" text-sm lg:text-[18px] mt-5 ">

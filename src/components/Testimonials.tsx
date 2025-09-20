@@ -9,7 +9,7 @@ const Testimonials = () => {
       <Container>
         <div className="w-full h-full">
           <div className="w-full h-full text-primary-100 pb-8">
-            <h3 className="text-[12px] text-sm font-medium  text-start lg:text-center py-4 my-5">
+            <h3 className="text-[12px] lg:text-sm font-medium  text-start lg:text-center py-4 my-5">
               TESTIMONIALS
             </h3>
             <h1 className=" font-semibold lg:font-bold text-[20px] lg:text-[40px] w-[60%] lg:w-full text-start lg:text-center pb-5">

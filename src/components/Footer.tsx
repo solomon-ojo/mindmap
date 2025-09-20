@@ -29,7 +29,7 @@ const Footer = () => {
                 />
               </div>
             </div>
-            <div className="w-full flex  mt-10">
+            <div className="w-full flex  mt-13">
               <div className=" flex-1">
                 <ul className="">
                   {navLinks.map((link) => (
@@ -60,10 +60,31 @@ const Footer = () => {
             </div>
 
             <div className="mt-20">
-              <p className="text-lg text-black/50">&copy;  [{new Date().getFullYear()}]  MindMap. All Rights Reserved. </p>
+              <p className="text-lg text-black/50">
+                &copy; [{new Date().getFullYear()}] MindMap. All Rights
+                Reserved.{" "}
+              </p>
             </div>
           </div>
-          <div className="bg-blue-400 flex-1 rounded-4xl p-8">right</div>
+          <div className="bg-primary-100 flex-1 rounded-4xl p-8 relative">
+            <div className="w-[55%] mt-16">
+              <h1 className="text-[44px] font-bold text-white leading-tight">
+                Reach out to Us and let us talk!
+              </h1>
+            </div>
+            <div className="absolute top-[-110px] right-[-70px] w-[300px] h-[499px]">
+              <div className="w-full h-full relative">
+                <Image
+                  src={"/images/footer_image.png"}
+                  fill
+                  alt="brain_image"
+                />
+              </div>{" "}
+            </div>
+            <div className="h-[54px] w-[480px] mt-24">
+              <button className="capitalize bg-white text-[20px]  font-semibold text-primary-100 rounded-4xl h-full w-full ">reach out to us</button>
+            </div>
+          </div>
         </div>
       </Container>
     </footer>
