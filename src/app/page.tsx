@@ -1,5 +1,7 @@
 import CommunityBanner from "@/components/CommunityBanner";
+import ContactForm from "@/components/ContactForm";
 import FrequentQuestions from "@/components/FrequentQuestions";
+import GetInTouch from "@/components/GetInTouch";
 import Hero from "@/components/Hero";
 import OurFeatures from "@/components/OurFeatures";
 import OurMethodology from "@/components/OurMethodology";
@@ -17,6 +19,8 @@ const Home = () => {
       <OurMethodology />
       <FrequentQuestions />
       <Testimonials />
+      <GetInTouch />
+      <ContactForm />
     </main>
   );
 };
