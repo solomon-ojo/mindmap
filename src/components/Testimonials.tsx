@@ -1,6 +1,5 @@
 import React from "react";
 import Container from "./Container";
-import TestimonialCards from "./TestimonialCards";
 import TestimonialSlider from "./TestimonialSlider";
 
 const Testimonials = () => {
