@@ -15,9 +15,12 @@ const Navbar = () => {
         {/* desktop */}
         <div className="w-full h-[106px]  bg-white hidden lg:flex items-center justify-between px-10 rounded-full">
           <div className="w-[35%] ">
-            <span className="w-[122px] h-[27px]  text-3xl text-primary-100 font-extrabold cursor-pointer">
-              mindmap
-            </span>
+            <Image
+              src="/images/logo.png"
+              width={122}
+              height={27}
+              alt="footer_icon"
+            />
           </div>
           <div className="flex-1 flex  justify-between ">
             <div className="flex flex-[2] items-center">
@@ -63,8 +66,13 @@ const Navbar = () => {
         {/* mobile */}
         <div className="w-full flex lg:hidden   ">
           <div className="w-full flex justify-between items-center h-[56px] rounded-full bg-white px-5 py-3 ">
-            <div className="flex-1 text-2xl font-extrabold text-primary-100 cursor-pointer">
-              mindmap
+            <div className="flex-1  cursor-pointer">
+              <Image
+                src="/images/logo.png"
+                width={87}
+                height={22}
+                alt="footer_icon"
+              />
             </div>
             <div
               onClick={toggleMobileNav}

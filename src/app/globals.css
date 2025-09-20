@@ -1,5 +1,9 @@
 @import "tailwindcss";
 
+html {
+  background-color: rgb(243, 244, 246);
+}
+
 @theme inline {
   /* font */
   --font-sans: "Lato", ui-sans-serif, system-ui;

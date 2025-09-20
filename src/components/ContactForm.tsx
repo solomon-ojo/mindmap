@@ -8,7 +8,7 @@ const ContactForm = () => {
       <Container>
         <div className="w-full h-full flex  flex-col lg:flex-row lg:h-[600px] bg-[#FDF7F1] border border-[#D9C7B5] rounded-4xl ">
           {/* upper part */}
-          <div className=" flex-1 p-10 text-primary-100">
+          <div className=" flex-1 p-5 lg:p-10 text-primary-100">
             <h1 className=" text-sm lg:text-[30px] font-semibold py-3 lg:py-5">
               Contact Details:
             </h1>
@@ -54,14 +54,14 @@ const ContactForm = () => {
             </p>
           </div>
           {/* lower part */}
-          <div className=" flex-1 p-10 text-primary-100">
+          <div className=" flex-1 p-5 lg:p-10 text-primary-100">
             <div className="lg:hidden border border-gray-400 border-dashed w-full"></div>
-            <h1 className="text-[30px] font-semibold py-3 pt-10  lg:py-5">
+            <h1 className="text-sm lg:text-[30px] font-semibold py-3 pt-10  lg:py-5">
               Send Us a Message
             </h1>
             <div className="flex flex-col gap-2 py-3 lg:py-4">
               <label
-                className="text-[13px] font-semibold lg:text-[20px]"
+                className="text-[13px] font-semibold lg:font-normal lg:text-[20px]"
                 htmlFor="email"
               >
                 Email
@@ -73,7 +73,7 @@ const ContactForm = () => {
             </div>
             <div className="flex flex-col gap-2 py-3 lg:py-4">
               <label
-                className="text-[13px] font-semibold lg:text-[20px]"
+                className="text-[13px] font-semibold lg:font-normal lg:text-[20px]"
                 htmlFor="message"
               >
                 Message

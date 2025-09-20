@@ -39,3 +39,51 @@ export const mobileNavLinks = [
     path: "/wait-list",
   },
 ];
+
+export const navLinks = [
+  {
+    name: "About",
+    path: "/about",
+  },
+  {
+    name: "Services",
+    path: "/services",
+  },
+  {
+    name: "Resources",
+    path: "/resources",
+  },
+  {
+    name: "Contact",
+    path: "/contact",
+  },
+];
+export const socialLinks = [
+  {
+    name: "Instagram",
+    path: "#",
+  },
+  {
+    name: "Facebook",
+    path: "#",
+  },
+  {
+    name: "YouTube",
+    path: "#",
+  },
+  {
+    name: "LinkedIn",
+    path: "#",
+  },
+];
+
+export const policy = [
+  {
+    name: "Terms Of Use",
+    path: "/terms-of-use",
+  },
+  {
+    name: "Privacy Policy",
+    path: "/privacy-policy",
+  },
+];
