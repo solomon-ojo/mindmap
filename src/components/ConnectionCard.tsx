@@ -36,8 +36,8 @@ const ConnectionCard = () => {
           </span>
         </div>
       </div>
-      <div className="absolute right-[-9%] bottom-[-57%] lg:top-[-37%]">
-        <div className="relative w-[200px] h-[250px] sm:w-[300px]  md:w-[400px]  lg:w-[564px] lg:h-[650px]">
+      <div className="absolute right-[-9%] md:right-0 bottom-[-57%] lg:top-[-37%]">
+        <div className="relative w-[200px] h-[250px]    lg:w-[564px] lg:h-[650px]">
           <Image
             src="/icons/connection_icon.svg"
             fill

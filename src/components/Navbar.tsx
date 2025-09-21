@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import Container from "./Container";
-import { desktopNavLinks, mobileNavLinks } from "@/utils/navlinks";
+import { desktopNavLinks, mobileNavLinks, navPaths } from "@/utils/navlinks";
 import Link from "next/link";
 import Image from "next/image";
 import { useUiStore } from "@/zustand/uiStore";
@@ -30,36 +30,36 @@ const Navbar = () => {
                     key={link.path}
                     className="px-4 text-black text-xl cursor-pointer"
                   >
-                    {link.name}
+                    <Link href={link.path}>{link.name}</Link>
                   </li>
                 ))}
               </ul>
             </div>
             <nav className="flex-1 flex justify-between ">
-              <Link href={"#"}>
+              <a href={navPaths.linkedin}>
                 <Image
                   src={"/icons/linkedin.png"}
                   alt="linkedin_icon"
                   width={24}
                   height={24}
                 />
-              </Link>
-              <Link href={"#"}>
+              </a>
+              <a href={navPaths.facebook}>
                 <Image
                   src={"/icons/facebook.png"}
                   alt="facebook_icon"
                   width={24}
                   height={24}
                 />
-              </Link>{" "}
-              <Link href={"#"}>
+              </a>{" "}
+              <a href={navPaths.instagram}>
                 <Image
                   src={"/icons/instagram.png"}
                   alt="instagram_icon"
                   width={24}
                   height={24}
                 />
-              </Link>
+              </a>
             </nav>
           </div>
         </div>
@@ -106,30 +106,36 @@ const Navbar = () => {
                   key={link.path}
                   className="text-2xl text-primary-100 font-bold cursor-pointer"
                 >
-                  {link.name}
+                  <Link href={link.path}>{link.name}</Link>
                 </li>
               ))}
             </ul>
             {/* mobile socials */}
             <div className="flex items-center gap-5">
-              <Image
-                src={"/icons/linkedin2.png"}
-                width={24}
-                height={24}
-                alt="linkedin_icon"
-              />
-              <Image
-                src={"/icons/facebook2.png"}
-                width={24}
-                height={24}
-                alt="facebook_icon"
-              />
-              <Image
-                src={"/icons/instagram2.png"}
-                width={24}
-                height={24}
-                alt="instagram_icon"
-              />
+              <a href={navPaths.linkedin} className="">
+                <Image
+                  src={"/icons/linkedin2.png"}
+                  width={24}
+                  height={24}
+                  alt="linkedin_icon"
+                />
+              </a>
+              <a href={navPaths.facebook} className="">
+                <Image
+                  src={"/icons/facebook2.png"}
+                  width={24}
+                  height={24}
+                  alt="facebook_icon"
+                />
+              </a>
+              <a href={navPaths.instagram} className="">
+                <Image
+                  src={"/icons/instagram2.png"}
+                  width={24}
+                  height={24}
+                  alt="instagram_icon"
+                />
+              </a>
             </div>
           </nav>
         </div>

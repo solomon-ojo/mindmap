@@ -37,7 +37,7 @@ const OurMethodology = () => {
               spanStyle2="text-[12px] lg:text-xl font-semibold px-4 py-2 lg:px-[39px] lg:py-[15px]   bg-tertiary-100 text-white rounded-4xl"
             />
           </div>
-          <div className="w-full">
+          <div className="w-full lg:mt-5">
             <ConnectionCard />
           </div>
         </div>
