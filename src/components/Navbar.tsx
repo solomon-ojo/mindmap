@@ -106,7 +106,9 @@ const Navbar = () => {
                   key={link.path}
                   className="text-2xl text-primary-100 font-bold cursor-pointer"
                 >
-                  <Link href={link.path}>{link.name}</Link>
+                  <Link onClick={toggleMobileNav} href={link.path}>
+                    {link.name}
+                  </Link>
                 </li>
               ))}
             </ul>

@@ -80,7 +80,7 @@ const Footer = () => {
                 Reach out to Us and let us talk!
               </h1>
             </div>
-            <div className="absolute top-[-110px] right-[-70px] w-[300px] h-[499px]">
+            <div className="absolute top-[-110px] right-[-70px] w-[390px] h-[499px]">
               <div className="w-full h-full relative">
                 <Image
                   src={"/images/footer_image.png"}
@@ -114,7 +114,7 @@ const Footer = () => {
                 reach out to us
               </button>
             </div>
-            <div className="absolute top-[-50px] right-[-10px] w-[100px] h-[259px]">
+            <div className="absolute top-[-50px] right-[-10px] w-[170px] h-[259px]">
               <div className="w-full h-full relative">
                 <Image
                   src={"/images/footer_image.png"}

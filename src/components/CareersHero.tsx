@@ -1,19 +1,18 @@
 import React from "react";
 import Container from "./Container";
 
-const ContactHero = () => {
+const CareersHero = () => {
   return (
     <section className=" w-full pt-[120px] lg:pt-5">
       <Container>
         <div className="w-full text-primary-100 ">
           <h1 className=" text-[24px] lg:text-[52px] font-bold text-center">
-            Contact Us
+            Careers
           </h1>
           <p className="hidden lg:block text-center text-[22px] px-6">
-            If you have any questions about MindMap ltd or want to partner with
-            us, join the team and community or simply want to share your story,
-            drop us a message below and we will be sure to get back to you as
-            soon as possible!
+            We are currently recruiting for open roles in the product, marketing
+            and operations team. If you are interested in joining the team
+            please submit your details below
           </p>
           <p className="lg:hidden text-[12px] text-center pt-3">
             We are currently recruiting for open roles in the product, marketing
@@ -26,4 +25,4 @@ const ContactHero = () => {
   );
 };
 
-export default ContactHero;
+export default CareersHero;
