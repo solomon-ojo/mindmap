@@ -5,9 +5,13 @@ import { desktopNavLinks, mobileNavLinks, navPaths } from "@/utils/navlinks";
 import Link from "next/link";
 import Image from "next/image";
 import { useUiStore } from "@/zustand/uiStore";
+import { usePathname } from "next/navigation";
 
 const Navbar = () => {
   const { isMobileNavOpen, toggleMobileNav } = useUiStore();
+  const pathname = usePathname();
+
+  const isActive = (path: string) => pathname === path;
 
   return (
     <header className=" fixed lg:relative  w-full backdrop-blur-md lg:backdrop-blur-none  bg-white/10 lg:bg-gray-100 pt-8 xl:pt-14 py-[30px] z-50 ">
@@ -15,24 +19,39 @@ const Navbar = () => {
         {/* desktop */}
         <div className="w-full h-[106px]  bg-white hidden lg:flex items-center justify-between px-10 rounded-full">
           <div className="w-[35%] ">
-            <Image
-              src="/images/logo.png"
-              width={122}
-              height={27}
-              alt="footer_icon"
-            />
+            <Link className="w-full" href={"/"}>
+              <Image
+                src="/images/logo.png"
+                width={122}
+                height={27}
+                alt="footer_icon"
+              />
+            </Link>
           </div>
           <div className="flex-1 flex  justify-between ">
             <div className="flex flex-[2] items-center">
               <ul className="flex items-center justify-between gap-5">
-                {desktopNavLinks.map((link) => (
-                  <li
-                    key={link.path}
-                    className="px-4 text-black text-xl cursor-pointer"
-                  >
-                    <Link href={link.path}>{link.name}</Link>
-                  </li>
-                ))}
+                {desktopNavLinks.map((link) => {
+                  const active = isActive(link.path);
+
+                  return (
+                    <li
+                      key={link.path}
+                      className="px-4 text-black text-xl cursor-pointer flex flex-col items-center"
+                    >
+                      <Link className="" href={link.path}>
+                        {link.name}
+                      </Link>
+
+                      {/* Dot placeholder to prevent layout shift */}
+                      <span
+                        className={`mt-1 w-2 h-2 rounded-full ${
+                          active ? "bg-black" : "bg-transparent"
+                        }`}
+                      ></span>
+                    </li>
+                  );
+                })}
               </ul>
             </div>
             <nav className="flex-1 flex justify-between ">
@@ -67,12 +86,14 @@ const Navbar = () => {
         <div className="w-full flex lg:hidden   ">
           <div className="w-full flex justify-between items-center h-[56px] rounded-full bg-white px-5 py-3 ">
             <div className="flex-1  cursor-pointer">
-              <Image
-                src="/images/logo.png"
-                width={87}
-                height={22}
-                alt="footer_icon"
-              />
+              <Link href={"/"}>
+                <Image
+                  src="/images/logo.png"
+                  width={87}
+                  height={22}
+                  alt="footer_icon"
+                />
+              </Link>
             </div>
             <div
               onClick={toggleMobileNav}

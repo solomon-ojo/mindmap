@@ -1,12 +1,30 @@
-import React from "react";
+"use client";
+import React, { useRef, useState } from "react";
 import Container from "./Container";
 import Image from "next/image";
 
 const CareerForm = () => {
+  const inputRef = useRef<HTMLInputElement>(null);
+  const [fileName, setFileName] = useState<string>("");
+
+  const handleFileUpload = () => {
+    inputRef.current?.click();
+  };
+  const handleFileChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+    const file = event.target.files?.[0];
+    if (file) {
+      setFileName(file.name);
+    }
+  };
   return (
     <section className="w-full pt-10  lg:my-10">
       <Container>
-        <div className="hidden lg:block w-full min-h-[1236px] rounded-[50px] text-primary-100 bg-white p-16 border-2 border-[#B1B1B1] ">
+        <div className=" relative hidden lg:block w-full min-h-[1236px] rounded-[50px] text-primary-100 bg-white p-16 border-2 border-[#B1B1B1] ">
+          <div className="w-[444px] h-[297px] absolute top-[-8%] right-6">
+            <div className="w-full h-full relative">
+              <Image src={"/images/career.png"} fill alt="career_image" />
+            </div>
+          </div>
           <h1 className="text-[32px] font-bold pb-5">
             Name <span className="font-normal text-[20px]">(required)</span>
           </h1>
@@ -78,17 +96,28 @@ const CareerForm = () => {
               <span className="font-normal text-[20px]">(required)</span>
             </h1>
             <div className="h-[261px] w-full pt-2">
-              <div className="w-full h-full border-2  border-dashed flex justify-center items-center rounded-xl border-[#AEAEAE] bg-[#F7F6F4]">
+              <div
+                onClick={handleFileUpload}
+                className="w-full h-full border-2  border-dashed cursor-pointer flex justify-center items-center rounded-xl border-[#AEAEAE] bg-[#F7F6F4]"
+              >
+                <input
+                  type="file"
+                  ref={inputRef}
+                  className="hidden"
+                  onChange={handleFileChange}
+                />
                 <div className="flex flex-col items-center justify-center gap-2">
                   <div className="w-[50px] h-[50px] relative flex justify-center">
                     <Image src={"/icons/upload.png"} fill alt="upload_icon" />
                   </div>
                   <div className="flex justify-center">
                     <p className="text-[24px] items-center font-medium text-[#AEAEAE]">
-                      Click to Upload{" "}
-                      <span className="font-normal text-[20px]">
-                        (5mb Max file size)
-                      </span>
+                      {fileName ? ` ${fileName}` : "Click to Upload"}
+                      {!fileName && (
+                        <span className="font-normal text-[20px]">
+                          (5mb Max file size)
+                        </span>
+                      )}
                     </p>
                   </div>
                 </div>
@@ -166,17 +195,28 @@ const CareerForm = () => {
               <span className="font-normal text-[10px]">(required)</span>
             </h1>
             <div className="h-[194px] w-full pt-2">
-              <div className="w-full h-full border-2  border-dashed flex justify-center items-center rounded-xl border-[#AEAEAE] bg-white">
+              <div
+                onClick={handleFileUpload}
+                className="w-full h-full cursor-pointer border-2  border-dashed flex justify-center items-center rounded-xl border-[#AEAEAE] bg-white"
+              >
+                <input
+                  type="file"
+                  ref={inputRef}
+                  className="hidden"
+                  onChange={handleFileChange}
+                />
                 <div className="flex flex-col items-center justify-center gap-2">
                   <div className="w-[50px] h-[50px] relative flex justify-center">
                     <Image src={"/icons/upload.png"} fill alt="upload_icon" />
                   </div>
                   <div className="flex justify-center">
                     <p className="text-[14px] items-center font-medium text-[#AEAEAE]">
-                      Click to Upload{" "}
-                      <span className="font-normal text-[12px]">
-                        (5mb Max file size)
-                      </span>
+                      {fileName ? ` ${fileName}` : "Click to Upload"}
+                      {!fileName && (
+                        <span className="font-normal text-[12px]">
+                          (5mb Max file size)
+                        </span>
+                      )}
                     </p>
                   </div>
                 </div>
