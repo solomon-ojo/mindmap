@@ -31,6 +31,10 @@ export const desktopNavLinks = [
     name: "Careers",
     path: navPaths.careers,
   },
+  {
+    name: "Waitlist",
+    path: navPaths.waitlist,
+  },
 ];
 
 export const mobileNavLinks = [

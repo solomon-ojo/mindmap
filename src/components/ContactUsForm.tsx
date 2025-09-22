@@ -6,7 +6,7 @@ const ContactUsForm = () => {
   return (
     <section className="w-full pt-10 my-5 lg:my-10">
       <Container>
-        <form className=" relative hidden lg:block w-full min-h-[909px] rounded-[50px] text-primary-100 bg-white p-16 border-2 border-[#B1B1B1] ">
+        <form className=" relative hidden lg:block w-full min-h-[909px] rounded-[50px] text-primary-100 bg-white p-16 border border-[#B1B1B1] ">
           <div className="w-[444px] h-[296px] absolute top-[-12%] right-0">
             <div className="w-full h-full relative">
               <Image src={"/images/contact.png"} fill alt="contact_image" />
@@ -64,7 +64,8 @@ const ContactUsForm = () => {
             </button>
           </div>
         </form>
-        <form className="lg:hidden h-[544px] w-full text-primary-100 p-5 rounded-4xl border-2 border-[#B1B1B1]">
+        {/* mobile */}
+        <form className="lg:hidden h-[544px] w-full text-primary-100 p-5 rounded-4xl border border-[#B1B1B1]">
           <h1 className="text-[16px] font-bold pb-5">
             Name <span className="font-normal text-[10px]">(required)</span>
           </h1>

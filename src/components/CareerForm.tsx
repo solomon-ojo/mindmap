@@ -19,7 +19,7 @@ const CareerForm = () => {
   return (
     <section className="w-full pt-10  lg:my-10">
       <Container>
-        <form className=" relative hidden lg:block w-full min-h-[1236px] rounded-[50px] text-primary-100 bg-white p-16 border-2 border-[#B1B1B1] ">
+        <form className=" relative hidden lg:block w-full min-h-[1236px] rounded-[50px] text-primary-100 bg-white p-16 border border-[#B1B1B1] ">
           <div className="w-[444px] h-[297px] absolute top-[-8%] right-6">
             <div className="w-full h-full relative">
               <Image src={"/images/career.png"} fill alt="career_image" />
@@ -132,7 +132,7 @@ const CareerForm = () => {
           </div>
         </form>
         {/* mobile */}
-        <form className="lg:hidden h-full w-full text-primary-100 p-5 rounded-4xl border-2 border-[#B1B1B1]">
+        <form className="lg:hidden h-full w-full text-primary-100 p-5 rounded-4xl border border-[#B1B1B1]">
           <h1 className="text-[16px] font-bold pb-5">
             Name <span className="font-normal text-[10px]">(required)</span>
           </h1>

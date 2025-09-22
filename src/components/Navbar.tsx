@@ -28,9 +28,9 @@ const Navbar = () => {
               />
             </Link>
           </div>
-          <div className="flex-1 flex  justify-between ">
+          <div className="flex-1 flex  justify-between gap-1">
             <div className="flex flex-[2] items-center">
-              <ul className="flex items-center justify-between gap-5">
+              <ul className="flex items-center justify-between gap-1">
                 {desktopNavLinks.map((link) => {
                   const active = isActive(link.path);
 
@@ -54,7 +54,7 @@ const Navbar = () => {
                 })}
               </ul>
             </div>
-            <nav className="flex-1 flex justify-between ">
+            <nav className="flex-1 flex justify-evenly ">
               <a href={navPaths.linkedin}>
                 <Image
                   src={"/icons/linkedin.png"}
