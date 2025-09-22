@@ -6,7 +6,7 @@ const ContactForm = () => {
   return (
     <section className="w-full h-full mb-10">
       <Container>
-        <div className="w-full h-full flex  flex-col lg:flex-row lg:h-[600px] bg-[#FDF7F1] border border-[#D9C7B5] rounded-4xl ">
+        <form className="w-full h-full flex  flex-col lg:flex-row lg:h-[600px] bg-[#FDF7F1] border border-[#D9C7B5] rounded-4xl ">
           {/* upper part */}
           <div className=" flex-1 p-5 lg:p-10 text-primary-100">
             <h1 className=" text-sm lg:text-[30px] font-semibold py-3 lg:py-5">
@@ -97,7 +97,7 @@ const ContactForm = () => {
               </button>
             </div>
           </div>
-        </div>
+        </form>
       </Container>
     </section>
   );
