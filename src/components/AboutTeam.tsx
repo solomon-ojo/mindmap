@@ -67,7 +67,7 @@ const AboutTeam = () => {
               <div className="w-[720px]">
                 <DesktopTeamCard
                   name={"Julia Onyewesi"}
-                  position={" (Marketing Manager"}
+                  position={" (Marketing Manager)"}
                   src={"/images/julia.png"}
                   role={
                     "Julia’s passion and advocacy for mental health stems from her interest in understanding how the psychological factors that we experience day to day effect our mental state. Her knowledge and hollistic understanding of content creation, AI integration and UI/UX makes her an invaluable member of the marketing team."
@@ -169,7 +169,7 @@ const AboutTeam = () => {
             </div>
 
             <div className="w-full flex flex-col pt-16 relative">
-              <div className="w-[224px] h-[210px] absolute top-[-10%] right-[30%]">
+              <div className="w-[224px] h-[210px] absolute top-[-10%] right-[20%]">
                 <Image
                   src={"/images/ring.png"}
                   width={224}
