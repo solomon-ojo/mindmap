@@ -16,6 +16,7 @@ const CareerForm = () => {
       setFileName(file.name);
     }
   };
+
   return (
     <section className="w-full pt-10  lg:my-10">
       <Container>
@@ -35,7 +36,7 @@ const CareerForm = () => {
               <div className="h-[70px] w-full pt-2">
                 <input
                   type="text"
-                  className="w-full h-full  rounded-xl bg-[#F7F6F4]"
+                  className="w-full h-full p-2  rounded-xl bg-[#F7F6F4]"
                 />
               </div>
             </div>
@@ -44,7 +45,7 @@ const CareerForm = () => {
               <div className="h-[70px] w-full pt-2">
                 <input
                   type="text"
-                  className="w-full h-full rounded-xl bg-[#F7F6F4]"
+                  className="w-full h-full p-2 rounded-xl bg-[#F7F6F4]"
                 />
               </div>
             </div>
@@ -57,7 +58,7 @@ const CareerForm = () => {
             <div className="h-[70px] w-full pt-2">
               <input
                 type="text"
-                className="w-full h-full  rounded-xl bg-[#F7F6F4]"
+                className="w-full h-full  p-2 rounded-xl bg-[#F7F6F4]"
               />
             </div>
           </div>
@@ -71,7 +72,7 @@ const CareerForm = () => {
             <div className="h-[70px] w-full pt-2">
               <input
                 type="text"
-                className="w-full h-full  rounded-xl bg-[#F7F6F4]"
+                className="w-full h-full p-2  rounded-xl bg-[#F7F6F4]"
               />
             </div>
             {/* phone number */}
@@ -83,7 +84,7 @@ const CareerForm = () => {
               <div className="h-[70px] w-full pt-2">
                 <input
                   type="number"
-                  className="w-full h-full  rounded-xl bg-[#F7F6F4]"
+                  className="w-full h-full p-2  rounded-xl bg-[#F7F6F4]"
                 />
               </div>
             </div>
@@ -112,7 +113,11 @@ const CareerForm = () => {
                   </div>
                   <div className="flex justify-center">
                     <p className="text-[24px] items-center font-medium text-[#AEAEAE]">
-                      {fileName ? ` ${fileName}` : "Click to Upload"}
+                      {fileName ? (
+                        <span className="text-primary-100">{fileName}</span>
+                      ) : (
+                        "Click to Upload"
+                      )}
                       {!fileName && (
                         <span className="font-normal text-[20px]">
                           (5mb Max file size)
@@ -145,7 +150,7 @@ const CareerForm = () => {
             <div className="h-[50px] w-full pt-1">
               <input
                 type="text"
-                className="w-full h-full  rounded-xl bg-white"
+                className="w-full h-full p-2 rounded-xl bg-white"
               />
             </div>
           </div>
@@ -158,7 +163,7 @@ const CareerForm = () => {
             <div className="h-[50px] w-full pt-1">
               <input
                 type="text"
-                className="w-full h-full  rounded-xl bg-white"
+                className="w-full h-full p-2  rounded-xl bg-white"
               />
             </div>
           </div>
@@ -171,7 +176,7 @@ const CareerForm = () => {
             <div className="h-[50px] w-full pt-1">
               <input
                 type="text"
-                className="w-full h-full  rounded-xl bg-white"
+                className="w-full h-full p-2  rounded-xl bg-white"
               />
             </div>
           </div>
@@ -184,7 +189,7 @@ const CareerForm = () => {
             <div className="h-[50px] w-full pt-1">
               <input
                 type="tel"
-                className="w-full h-full  rounded-xl bg-white"
+                className="w-full h-full p-2  rounded-xl bg-white"
               />
             </div>
           </div>
@@ -211,7 +216,11 @@ const CareerForm = () => {
                   </div>
                   <div className="flex justify-center">
                     <p className="text-[14px] items-center font-medium text-[#AEAEAE]">
-                      {fileName ? ` ${fileName}` : "Click to Upload"}
+                      {fileName ? (
+                        <span className="text-primary-100">{fileName}</span>
+                      ) : (
+                        "Click to Upload"
+                      )}
                       {!fileName && (
                         <span className="font-normal text-[12px]">
                           (5mb Max file size)

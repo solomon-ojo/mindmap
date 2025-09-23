@@ -39,7 +39,7 @@ const Navbar = () => {
                       key={link.path}
                       className="px-4 text-black text-xl cursor-pointer flex flex-col items-center"
                     >
-                      <Link className="" href={link.path}>
+                      <Link className="text-[18px] text-black" href={link.path}>
                         {link.name}
                       </Link>
 
@@ -127,7 +127,11 @@ const Navbar = () => {
                   key={link.path}
                   className="text-2xl text-primary-100 font-bold cursor-pointer"
                 >
-                  <Link onClick={toggleMobileNav} href={link.path}>
+                  <Link
+                    className="text-[24px] font-bold"
+                    onClick={toggleMobileNav}
+                    href={link.path}
+                  >
                     {link.name}
                   </Link>
                 </li>

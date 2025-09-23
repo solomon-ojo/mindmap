@@ -12,9 +12,9 @@ const WaitlistForm = () => {
           {/* name */}
           <div className="w-full h-full lg:h-[119px] flex  flex-col lg:flex-row lg:items-center lg:gap-6  ">
             <div className=" flex-1 ">
-              <h1 className="text-[13px] lg:font-semibold py-1 lg:py-3">
+              <h1 className="text-[13px] lg:text-[24px] lg:font-medium font-semibold py-1 lg:py-3">
                 First Name{" "}
-                <span className="font-normal text-[10px]">(required)</span>
+                <span className="lg:hidden font-normal text-[10px]">(required)</span>
               </h1>
               <div className="h-[50px] lg:h-[70px] w-full pt-2">
                 <input
@@ -24,9 +24,9 @@ const WaitlistForm = () => {
               </div>
             </div>
             <div className=" flex-1 ">
-              <h1 className="text-[13px] lg:font-semibold py-1 lg:py-3">
+              <h1 className="text-[13px] lg:text-[24px] lg:font-medium font-semibold py-1 lg:py-3">
                 Last Name
-                <span className="font-normal text-[10px]">(required)</span>
+                <span className="lg:hidden font-normal text-[10px]">(required)</span>
               </h1>
               <div className="h-[50px] lg:h-[70px] w-full pt-2">
                 <input
@@ -38,8 +38,8 @@ const WaitlistForm = () => {
           </div>
           {/* Email */}
           <div className=" flex-1 py-2  ">
-            <h1 className="text-[13px] font-semibold py-1 lg:py-3">
-              Email <span className="font-normal text-[10px]">(required)</span>
+            <h1 className="text-[13px] font-semibold lg:text-[24px] lg:font-medium py-1 lg:py-3">
+              Email <span className="lg:hidden font-normal text-[10px]">(required)</span>
             </h1>
             <div className="h-[50px] lg:h-[70px] w-full pt-2">
               <input

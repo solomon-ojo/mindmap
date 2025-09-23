@@ -76,7 +76,7 @@ const ContactForm = () => {
               </label>
               <input
                 type="text"
-                className="w-full lg:w-[450px] h-[50px] lg:h-[60px]  bg-white border border-[#D9C7B5] rounded-2xl"
+                className="w-full lg:w-[450px] h-[50px] lg:h-[60px] p-2  bg-white border border-[#D9C7B5] rounded-2xl"
               />
             </div>
             <div className="flex flex-col gap-2 py-3 lg:py-4">
@@ -86,7 +86,7 @@ const ContactForm = () => {
               >
                 Message
               </label>
-              <textarea className="w-full lg:w-[450px] h-[98px]  bg-white border border-[#D9C7B5] rounded-2xl"></textarea>
+              <textarea className="w-full lg:w-[450px] h-[98px] p-2  bg-white border border-[#D9C7B5] rounded-2xl"></textarea>
             </div>
             <div className="w-full lg:w-[450px] h-[40px] lg:h-[54px] my-4 mt-8 ">
               <button className="hidden lg:block w-full h-full rounded-4xl text-white bg-primary-100">

@@ -22,7 +22,7 @@ const ContactUsForm = () => {
               <div className="h-[70px] w-full pt-2">
                 <input
                   type="text"
-                  className="w-full h-full  rounded-xl bg-[#F7F6F4]"
+                  className="w-full h-full p-2  rounded-xl bg-[#F7F6F4]"
                 />
               </div>
             </div>
@@ -31,7 +31,7 @@ const ContactUsForm = () => {
               <div className="h-[70px] w-full pt-2">
                 <input
                   type="text"
-                  className="w-full h-full rounded-xl bg-[#F7F6F4]"
+                  className="w-full h-full p-2 rounded-xl bg-[#F7F6F4]"
                 />
               </div>
             </div>
@@ -44,7 +44,7 @@ const ContactUsForm = () => {
             <div className="h-[70px] w-full pt-2">
               <input
                 type="text"
-                className="w-full h-full  rounded-xl bg-[#F7F6F4]"
+                className="w-full h-full p-2 rounded-xl bg-[#F7F6F4]"
               />
             </div>
           </div>
@@ -55,7 +55,7 @@ const ContactUsForm = () => {
               <span className="font-normal text-[20px]">(required)</span>
             </h1>
             <div className=" w-full pt-2">
-              <textarea className="w-full min-h-[289px]  rounded-xl bg-[#F7F6F4]"></textarea>
+              <textarea className="w-full min-h-[289px] p-2  rounded-xl bg-[#F7F6F4]"></textarea>
             </div>
           </div>
           <div className="w-[225px] h-[54px] mt-12">
@@ -78,7 +78,7 @@ const ContactUsForm = () => {
             <div className="h-[50px] w-full pt-1">
               <input
                 type="text"
-                className="w-full h-full  rounded-xl bg-white"
+                className="w-full h-full p-2  rounded-xl bg-white"
               />
             </div>
           </div>
@@ -91,7 +91,7 @@ const ContactUsForm = () => {
             <div className="h-[50px] w-full pt-1">
               <input
                 type="text"
-                className="w-full h-full  rounded-xl bg-white"
+                className="w-full h-full p-2  rounded-xl bg-white"
               />
             </div>
           </div>
@@ -104,7 +104,7 @@ const ContactUsForm = () => {
             <div className="h-[50px] w-full pt-1">
               <input
                 type="text"
-                className="w-full h-full  rounded-xl bg-white"
+                className="w-full h-full p-2  rounded-xl bg-white"
               />
             </div>
           </div>
@@ -117,7 +117,7 @@ const ContactUsForm = () => {
             <div className="h-[50px] w-full pt-1">
               <input
                 type="tel"
-                className="w-full h-full  rounded-xl bg-white"
+                className="w-full h-full p-2  rounded-xl bg-white"
               />
             </div>
           </div>
